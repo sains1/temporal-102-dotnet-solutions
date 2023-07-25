@@ -10,7 +10,9 @@ During this exercise, you will
 - Update the Activity and Workflow code to use these structs
 - Run the Workflow to ensure that it works as expected
 
-This exercise has two top level folders - `solution` contains a working reference example for the exercise whilst `practice` contains the working directory for your changes. We have the following projects:
+We have the same project structure as in the previous exercise. Make your changes to the code in the `practice` subdirectory (look for `TODO` comments that will guide you to where you should make changes to the code). If you need a hint or want to verify your changes, look at the complete version in the `solution` subdirectory.
+
+We have the following projects in the solution:
 
 - `Application` - A .NET class library where we'll add our Workflows and Activities.
 - `Client` - A .NET console application that interacts with the temporal server to start a Workflow.

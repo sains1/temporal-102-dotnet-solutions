@@ -1,4 +1,5 @@
 using System.Net;
+using System.Net.Http.Json;
 using Temporalio.Activities;
 
 namespace Application;
@@ -30,7 +31,7 @@ public static class Activities
 
         // TODO  use the Debug level to log the successful translation and include the
         //       translated term as a name-value pair
-        var content = await response.Content.ReadAsStringAsync();
+        var content = await response.Content.ReadFromJsonAsync<string>() ?? "";
 
         return new TranslationActivityOutput(content);
     }

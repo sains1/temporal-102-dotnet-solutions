@@ -1,4 +1,5 @@
 using System.Net;
+using System.Net.Http.Json;
 using Temporalio.Activities;
 
 namespace Application;
@@ -23,7 +24,7 @@ public static class Activities
         // will throw if we successfully called the service, but it could not perform the translation (>400 status code)
         response.EnsureSuccessStatusCode();
 
-        var content = await response.Content.ReadAsStringAsync();
+        var content = await response.Content.ReadFromJsonAsync<string>() ?? "";
 
         // TODO Replace 'content' below with the record your using as output,
         return content;

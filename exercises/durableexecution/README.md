@@ -10,12 +10,7 @@ During this exercise, you will
 - Launch two Workers and run the Workflow
 - Kill one of the Workers during Workflow Execution and observe that the remaining Worker completes the execution
 
-We have the same project structure as in the previous exercise:
-
-- `Application` - A .NET class library where we'll add our Workflows and Activities.
-- `Client` - A .NET console application that interacts with the temporal server to start a Workflow.
-- `Worker` - A .NET application with a background service that runs our temporal Worker.
-- `Api` - A .NET API with a 'translation service' endpoint at `GET /translate`.
+We have the same project structure as in the previous exercise. Make your changes to the code in the `practice` subdirectory (look for `TODO` comments that will guide you to where you should make changes to the code). If you need a hint or want to verify your changes, look at the complete version in the `solution` subdirectory.
 
 ## Part A: Add Logging to the Workflow Code
 
