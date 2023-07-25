@@ -36,6 +36,6 @@ public class TranslationActivityTests
         Task<TranslationActivityOutput> Act() => env.RunAsync(() => Activities.TranslateTerm(input));
 
         var exception = await Assert.ThrowsAsync<HttpRequestException>(Act);
-        Assert.Equal("Response status code does not indicate success: 400 (Bad Request).", exception.Message);
+        Assert.Equal("HTTP Error BadRequest: Unknown language code 'xq'", exception.Message);
     }
 }

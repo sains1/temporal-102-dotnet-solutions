@@ -29,10 +29,11 @@ We have the same project structure as in the previous exercise. Make your change
 1. Edit the [Application/Activity.cs](./practice/Application/Activities.cs) file
 2. Define an Activity logger at the top of the Activity function
 3. Insert a logging statement at the Info level just after this, so you'll know when the Activity is invoked.
-   1. Include the term being translated and the language code as name-value pairs
-4. Near the bottom of the function, use the Debug level to log the successful translation
-   1. Include the translated term as a name-value pair
-5. Save your changes
+   1. Include the term being translated and the language code
+4. Optionally, add log statements at the Error level anywhere that the Activity throws an Exception
+5. Near the bottom of the function, use the Debug level to log the successful translation
+   1. Include the translated term
+6Save your changes
 
 ## Part C: Add a Timer to the Workflow
 

@@ -26,8 +26,12 @@ public static class Activities
         // will throw if service is unreachable
         var response = await Client.GetAsync(url);
 
-        // will throw if we successfully called the service, but it could not perform the translation (>400 status code)
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            // throw if we successfully called the service, but it could not perform the translation (>=400 status code)
+            throw new HttpRequestException(
+                $"HTTP Error {response.StatusCode}: {await response.Content.ReadFromJsonAsync<string>()}");
+        }
 
         // TODO  use the Debug level to log the successful translation and include the
         //       translated term as a name-value pair
