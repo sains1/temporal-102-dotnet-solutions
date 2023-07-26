@@ -1,5 +1,7 @@
 # Exercise #5: Version the Change with the GetVersion API
 
+This readme was ported from the official golang tutorial [testing-code/README.md](https://github.com/temporalio/edu-102-go-code/blob/main/exercises/version-workflow/README.md).
+
 During this exercise, you will
 
 - Run a Workflow Execution that completes successfully
