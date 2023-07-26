@@ -17,9 +17,13 @@ Golang course link - https://github.com/temporalio/edu-102-go-code
 ## Exercises
 
 1 - [Using Structs](./exercises/usingstructs/README.md)
+
 2 - [Durable Execution](./exercises/durableexecution/README.md)
+
 3 - [Testing Code](./exercises/testingcode/README.md)
+
 4 - [Debug Activity](./exercises//debugactivity/README.md)
+
 5 - [Versioning Workflows](./exercises/versionworkflow/README.md)
 
 ## Repo structure
