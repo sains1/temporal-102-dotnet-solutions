@@ -1,6 +1,6 @@
 # Exercise 4: Debugging and Fixing an Activity Failure
 
-This readme was ported from the official golang tutorial [testing-code/README.md](https://github.com/temporalio/edu-102-go-code/blob/main/exercises/debug-activity/README.md).
+This readme was ported from the official golang tutorial [debug-activity/README.md](https://github.com/temporalio/edu-102-go-code/blob/main/exercises/debug-activity/README.md).
 
 During this exercise, you will
 
